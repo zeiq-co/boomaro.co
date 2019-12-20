@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+// import catAndHumanIllustration from "../../static/images/cat-and-human-illustration.svg";
 import Navigation from "../components/Navigation";
 import HomeHero from "../components/HomeHero";
 import Waves from "../components/Waves";
@@ -12,7 +12,6 @@ import PricingCards from "../components/PricingCards";
 import ReverseWave from "../components/ReverseWave";
 import Action from "../components/Action";
 import Footer from "../components/Footer";
-
 
 function IndexPage() {
   return (
