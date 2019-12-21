@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `TailwindPlay`,
+    title: `Boomaro App`,
     description: `GatsbyJS Starter styled with Tailwind CSS`,
     author: `@Sm0keDev`,
     github: `https://github.com/app-generator/gatsbyjs-starter-tailwindplay`,
@@ -20,7 +20,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `static/images/tailwind-icon.png`
+        icon: `static/images/boomaro.png`
       }
     },
     `gatsby-plugin-postcss`,

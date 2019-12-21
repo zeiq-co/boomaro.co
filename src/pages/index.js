@@ -17,8 +17,8 @@ function IndexPage() {
   return (
     <Layout>
       <SEO
-        title="GatsbyJS Tailwind Starter"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        title="Online Accounting Software-GST"
+        keywords={[`accoutant`, `acountant app`]}
       />
       <Navigation />
       <HomeHero />

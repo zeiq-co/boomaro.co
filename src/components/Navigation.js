@@ -43,7 +43,7 @@ const Navigation = () => (
               className="inline-block py-2 px-4 text-black font-bold no-underline"
               href="#"
             >
-              Active
+              About
             </a>
           </li>
           <li className="mr-3">
@@ -51,7 +51,7 @@ const Navigation = () => (
               className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
               href="#"
             >
-              link
+              Contact us
             </a>
           </li>
         </ul>
@@ -61,7 +61,7 @@ const Navigation = () => (
             id="navAction"
             className="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white"
           >
-            Get Sources
+            Download
           </button>
         </form>
       </div>
