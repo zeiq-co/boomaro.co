@@ -15,11 +15,10 @@ const Features = () => (
             Online GST accounting software
           </h3>
           <p className="text-gray-600 mb-8">
-          Keep the money coming in with Boomaro App. Send estimates, convert to invoices, and get paid online, on time.
-
-            Create GST invoices in seconds
-            Chase payments easily with payment reminders
-            Give your customers online payment options and get paid faster
+            Keep the money coming in with Boomaro App. Send estimates, convert
+            to invoices, and get paid online, on time. Create GST invoices in
+            seconds Chase payments easily with payment reminders Give your
+            customers online payment options and get paid faster
             <br />
             <br />
           </p>
@@ -31,8 +30,7 @@ const Features = () => (
 
       <div className="flex flex-wrap flex-col-reverse sm:flex-row">
         <div className="w-full sm:w-1/2 p-6 mt-6">
-          
-        <img src={feature} />
+          <img src={feature} />
         </div>
         <div className="w-full sm:w-1/2 p-6 mt-6">
           <div className="align-middle">
@@ -40,10 +38,10 @@ const Features = () => (
               built for your business
             </h3>
             <p className="text-gray-600 mb-8">
-                Capture the goods and services you offer and quickly add them to your transactions.
-                Keep track of inventory levels at all times
-                Set reorders point and replenish stock when it gets low
-                Organize your inventory with vital information like SKU, cost, and stock on hand
+              Capture the goods and services you offer and quickly add them to
+              your transactions. Keep track of inventory levels at all times Set
+              reorders point and replenish stock when it gets low Organize your
+              inventory with vital information like SKU, cost, and stock on hand
               <br />
               <br />
             </p>

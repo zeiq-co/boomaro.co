@@ -9,7 +9,9 @@ const Action = () => (
       <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
 
-    <h3 className="my-4 text-3xl leading-tight">Manage your finances wherever you go, with the Boomaro App.</h3>
+    <h3 className="my-4 text-3xl leading-tight">
+      Manage your finances wherever you go, with the Boomaro App.
+    </h3>
 
     <form action>
       <button
