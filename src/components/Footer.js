@@ -11,7 +11,7 @@ const Footer = () => (
             href="#"
           >
             <img src={logo} width="50" height="50" />
-            BOOMARO
+            Boomaro
           </a>
         </div>
 
