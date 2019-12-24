@@ -12,7 +12,7 @@ const HomeHero = () => (
         <h1 className="my-4 text-4xl font-bold leading-tight self-center">
           Boomaro Accounting App
         </h1>
-        <p className="leading-normal text-2xl mb-8">
+        <p className="leading-normal text-2xl mb-8 self-center">
           A simplified tool for Accountants available on
         </p>
 
