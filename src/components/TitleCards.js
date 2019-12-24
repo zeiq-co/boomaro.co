@@ -69,13 +69,10 @@ const TitleCards = () => (
             className="flex flex-wrap no-underline hover:no-underline"
           >
             <div className="w-full font-bold text-xl text-gray-800 px-6">
-              On-time returns filing
+              Customise invoices
             </div>
             <p className="text-gray-800 text-base px-6 mb-5">
-              File your GST returns directly from Boomaro App. Your accounting
-              software will automatically calculate your GST liability and
-              enable you to push transactions to the GST portal and file returns
-              directly.
+              Send payment reminders every time you send an invoice to ensure you get paid on time. Your customers will get nudged several days before an invoice is due, and several days after it’s overdue until they pay. It’s the most effective way for freelancers and small business to manage their cash flow.
             </p>
           </a>
         </div>

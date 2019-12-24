@@ -35,13 +35,10 @@ const Features = () => (
         <div className="w-full sm:w-1/2 p-6 mt-6">
           <div className="align-middle">
             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-              built for your business
+              Automatically send payment reminders with every invoice
             </h3>
             <p className="text-gray-600 mb-8">
-              Capture the goods and services you offer and quickly add them to
-              your transactions. Keep track of inventory levels at all times Set
-              reorders point and replenish stock when it gets low Organize your
-              inventory with vital information like SKU, cost, and stock on hand
+                Send payment reminders every time you send an invoice to ensure you get paid on time. Your customers will get nudged several days before an invoice is due, and several days after it’s overdue until they pay. It’s the most effective way for freelancers and small business to manage their cash flow.
               <br />
               <br />
             </p>
