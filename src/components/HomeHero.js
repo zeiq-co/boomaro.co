@@ -1,15 +1,15 @@
 import React from "react";
 
 import heroImg from "../../static/images/laptop.png";
-import windowLogo from "../../static/images/Windowsxp.svg";
-import macLogo from "../../static/images/Mac.svg";
+import windowLogo from "../../static/images/window-button.png";
+import macLogo from "../../static/images/mac-button.png";
 
 const HomeHero = () => (
   <div className="pt-24">
     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
         <p className="uppercase tracking-loose w-full"></p>
-        <h1 className="my-4 text-4xl font-bold leading-tight">
+        <h1 className="my-4 text-4xl font-bold leading-tight self-center">
           Boomaro Accounting App
         </h1>
         <p className="leading-normal text-2xl mb-8">
@@ -18,10 +18,10 @@ const HomeHero = () => (
 
         <div className="flex flex-row w-full justify-center">
           <a href="/">
-            <img className="w-24 z-50" src={windowLogo} />
+            <img className="w-48 mr-4 z-50" src={windowLogo} />
           </a>
           <a href="/">
-            <img className="w-20 z-50" src={macLogo} />
+            <img className="w-48 z-50" src={macLogo} />
           </a>
         </div>
       </div>
