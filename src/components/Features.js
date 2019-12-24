@@ -1,5 +1,6 @@
 import React from "react";
-import feature from "../../static/images/boomaro-dashboard.png";
+import feature from "../../static/images/features.png";
+import feature2 from "../../static/images/features2.png";
 
 const Features = () => (
   <section className="bg-white border-b py-8">
@@ -12,7 +13,7 @@ const Features = () => (
       <div className="flex flex-wrap">
         <div className="w-5/6 sm:w-1/2 p-6">
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Online GST accounting software
+            GST accounting software
           </h3>
           <p className="text-gray-600 mb-8">
             Keep the money coming in with Boomaro App. Send estimates, convert
@@ -30,7 +31,7 @@ const Features = () => (
 
       <div className="flex flex-wrap flex-col-reverse sm:flex-row">
         <div className="w-full sm:w-1/2 p-6 mt-6">
-          <img src={feature} />
+          <img src={feature2} />
         </div>
         <div className="w-full sm:w-1/2 p-6 mt-6">
           <div className="align-middle">

@@ -1,7 +1,9 @@
 import React from "react";
+import windowLogo from "../../static/images/window-button.png";
+import macLogo from "../../static/images/mac-button.png";
 
 const Action = () => (
-  <section className="container mx-auto text-center py-6 mb-12">
+  <section className="container mx-auto text-center py-6 mb-12" id="download">
     <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
       Download now for a free trial
     </h1>
@@ -13,14 +15,23 @@ const Action = () => (
       Manage your finances wherever you go, with the Boomaro App.
     </h3>
 
-    <form action>
+    <div className="flex flex-row w-full justify-center">
+          <a href="/">
+            <img className="w-48 mr-4 z-50" src={windowLogo} />
+          </a>
+          <a href="/">
+            <img className="w-48 z-50" src={macLogo} />
+          </a>
+        </div>
+
+    {/* <form action>
       <button
         type="submit"
         className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"
       >
         Download!
       </button>
-    </form>
+    </form> */}
   </section>
 );
 

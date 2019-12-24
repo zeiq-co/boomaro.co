@@ -1,6 +1,6 @@
 import React from "react";
 
-import heroImg from "../../static/images/laptop.png";
+import heroImg from "../../static/images/MacBook-Pro-mockup.png";
 import windowLogo from "../../static/images/window-button.png";
 import macLogo from "../../static/images/mac-button.png";
 
