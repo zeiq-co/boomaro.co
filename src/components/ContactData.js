@@ -19,7 +19,7 @@ const ContactData = () => (
         </p>
         <p className="leading-normal text-xl mb-8 text-gray-800">
           <span className="icon">📧</span>
-          <a href="boomaro.com"> boomaro.co</a>
+          <a href="https://www.boomaro.co/"> boomaro.co</a>
         </p>
         <p className="leading-normal text-xl mb-8 text-gray-800">
           <span className="icon">☎️</span>

@@ -13,7 +13,7 @@ const Navigation = () => (
       <div className="pl-4 flex items-center">
         <a
           className="flex flex-row text-red-700 toggleColour no-underline hover:no-underline font-bold text-2xl  lg:text-4xl text-gray-800 flex-row"
-          href="#"
+          href="/"
         >
           <img src={logo} width="50" height="50" />
           Boomaro
@@ -50,10 +50,7 @@ const Navigation = () => (
           </li>
           <li className="mr-3">
             <Link to="/contact">
-              <a
-                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
-              >
+              <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
                 Contact us
               </a>
             </Link>
