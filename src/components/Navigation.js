@@ -1,8 +1,8 @@
 import React from "react";
 
-import logo from "../../static/images/boomaro.png";
-
 import { Link } from "gatsby";
+
+import logo from "../../static/images/boomaro.png";
 
 const Navigation = () => (
   <nav
