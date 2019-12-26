@@ -43,16 +43,16 @@ const Navigation = () => (
           <li className="mr-3">
             <a
               className="inline-block py-2 px-4 text-black font-bold no-underline"
-              href="#"
+              href="/"
             >
               About
             </a>
           </li>
           <li className="mr-3">
             <Link to="/contact">
-              <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+              <h1 className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
                 Contact us
-              </a>
+              </h1>
             </Link>
           </li>
         </ul>
