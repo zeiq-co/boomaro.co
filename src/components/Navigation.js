@@ -2,6 +2,8 @@ import React from "react";
 
 import logo from "../../static/images/boomaro.png";
 
+import { Link } from "gatsby";
+
 const Navigation = () => (
   <nav
     id="header"
@@ -47,12 +49,14 @@ const Navigation = () => (
             </a>
           </li>
           <li className="mr-3">
-            <a
-              className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-              href="#"
-            >
-              Contact us
-            </a>
+            <Link to="/contact">
+              <a
+                className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="#"
+              >
+                Contact us
+              </a>
+            </Link>
           </li>
         </ul>
         <form action>
