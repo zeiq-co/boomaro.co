@@ -1,6 +1,6 @@
 import React from "react";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEO from "../components/seo";
 // import catAndHumanIllustration from "../../static/images/cat-and-human-illustration.svg";
 import Navigation from "../components/Navigation";
@@ -11,7 +11,7 @@ import TitleCards from "../components/TitleCards";
 import PricingCards from "../components/PricingCards";
 import ReverseWave from "../components/ReverseWave";
 import Action from "../components/Action";
-import Footer from "../components/Footer";
+
 
 function IndexPage() {
   return (
@@ -28,7 +28,6 @@ function IndexPage() {
       <PricingCards />
       <ReverseWave />
       <Action />
-      <Footer />
     </Layout>
   );
 }

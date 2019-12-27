@@ -28,9 +28,15 @@ const PricingCards = () => (
               {/* <span className="text-base"> / for Three month</span> */}
             </div>
             <div className="flex items-center justify-center">
+            <a
+                href="https://rzp.io/l/trIlvds"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-                Sign Up
+                Buy now
               </button>
+              </a>
             </div>
           </div>
         </div>
@@ -54,9 +60,15 @@ const PricingCards = () => (
               {/* <span className="text-base">/ For Six month</span> */}
             </div>
             <div className="flex items-center justify-center">
+            <a
+                href="https://rzp.io/l/WTcW4by"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-                Sign Up
+                Buy now
               </button>
+              </a>
             </div>
           </div>
         </div>
@@ -78,9 +90,15 @@ const PricingCards = () => (
               {/* <span className="text-base">/ For year</span> */}
             </div>
             <div className="flex items-center justify-center">
+            <a
+                href="https://rzp.io/l/OUcDPh5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-                Sign Up
+                Buy now
               </button>
+              </a>
             </div>
           </div>
         </div>

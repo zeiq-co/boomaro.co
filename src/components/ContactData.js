@@ -18,8 +18,8 @@ const ContactData = () => (
           <span className="icon">📍</span> Punjab, India
         </p>
         <p className="leading-normal text-xl mb-8 text-gray-800">
-          <span className="icon">📧</span>
-          <a href="https://www.boomaro.co/"> boomaro.co</a>
+          <span className="icon">📧 </span>
+          <a href="mailto:hi@packrs.co">hi@zeiq.co</a>
         </p>
         <p className="leading-normal text-xl mb-8 text-gray-800">
           <span className="icon">☎️</span>
