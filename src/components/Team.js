@@ -32,13 +32,7 @@ const team = [
 
 const Team = () => (
     <div>  
-        <div className="w-full font-bold text-xl text-gray-800 px-6 text-center">
-              About
-            </div>
-            <div class="flex flex-col bg-gray-200 px-64">
-                <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-            </div>
-        <h2 className="title is-2 has-text-weight-bold text-center">
+        <h2 className="text-5xl text-black text-center bg-white pb-20">
             Meet Our Team
         </h2>
           <div class="flex bg-white">

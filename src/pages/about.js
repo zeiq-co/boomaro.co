@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import Team from "../components/Team";
+import PageLayout from '../components/PageLayout'
 
 
 function about() {
@@ -12,6 +13,7 @@ function about() {
         title="Online Accounting Software-GST"
         keywords={[`accoutant`, `acountant app`]}
       />
+      <PageLayout/>
       <Team />
     </Layout>
   );
