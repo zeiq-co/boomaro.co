@@ -30,6 +30,13 @@ module.exports = {
         tailwind: true,
         purgeOnly: ["src/css/style.css", "src/css/global.css"]
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
   ]
 };

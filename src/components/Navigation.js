@@ -7,7 +7,7 @@ import logo from "../../static/images/boomaro.png";
 const Navigation = () => (
   <nav
     id="header"
-    className="fixed w-full z-30 top-0 text-white bg-white shadow"
+    className="w-full z-30 top-0 text-white bg-white shadow"
   >
     <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div className="pl-4 flex items-center">
@@ -42,8 +42,8 @@ const Navigation = () => (
         <ul className="list-reset lg:flex justify-end flex-1 items-center">
           <li className="mr-3">
             <a
-              className="inline-block py-2 px-4 text-black font-bold no-underline"
-              href="/"
+              className="inline-block py-2 px-4 text-black no-underline"
+              href="/about"
             >
               About
             </a>
@@ -60,9 +60,9 @@ const Navigation = () => (
           <a
             id="navAction"
             className="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white"
-            href="/#download"
+            href="http://app.boomaro.co/"
           >
-            Download
+            Live Demo
           </a>
         </form>
       </div>

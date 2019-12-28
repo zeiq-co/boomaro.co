@@ -8,8 +8,8 @@ import Footer from "./Footer";
 function Layout({ children }) {
   return (
     <body className="leading-normal tracking-normal text-white gradient">
-      {children}
       <Navigation />
+        {children}
       <Footer />
     </body>
   );

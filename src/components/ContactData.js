@@ -1,6 +1,6 @@
 import React from "react";
 
-import contactxp from "../../static/images/contactxp.svg";
+import contactxp from "../../static/images/contact.png";
 
 const ContactData = () => (
   <div className="pt-48 pb-24 bg-white">
@@ -11,7 +11,7 @@ const ContactData = () => (
         </h1>
 
         <p className="leading-normal text-xl mb-8 text-gray-800">
-          We’re as accessible as your good neighbour. Feel freeto give us a
+          We’re as accessible as your good neighbour. Feel free to give us a
           shout.
         </p>
         <p className="leading-normal text-xl mb-8 text-gray-800">

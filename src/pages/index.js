@@ -20,7 +20,6 @@ function IndexPage() {
         title="Online Accounting Software-GST"
         keywords={[`accoutant`, `acountant app`]}
       />
-      <Navigation />
       <HomeHero />
       <Waves />
       <Features />
