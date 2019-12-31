@@ -7,7 +7,7 @@ const ContactData = () => (
     <div className="container px-20 mx-auto flex flex-wrap flex-col md:flex-row ">
       <div className="flex flex-col w-full md:w-3/6  items-start md:text-left">
         <h1 className="my-4 text-5xl font-bold leading-tight text-gray-800 ">
-          Contact Us
+          Contact Us  
         </h1>
 
         <p className="leading-normal text-xl mb-8 text-gray-800">

@@ -31,7 +31,7 @@ const team = [
 ];
 
 const Team = () => (
-    <div>  
+  <div className="container px-3 mx-auto">
         <h2 className="text-5xl text-black text-center bg-white pb-20">
             Meet Our Team
         </h2>
@@ -50,7 +50,7 @@ const Team = () => (
         </div>
         <div class="w-1/5"></div>
         </div>
-    </div>
+        </div>
 );
 
 export default Team;
