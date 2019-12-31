@@ -11,6 +11,8 @@
     "gatsby-plugin-postcss": "2.1.0",
     "gatsby-plugin-purgecss": "4.0.0",
     "gatsby-plugin-react-helmet": "3.1.0",
+    "gatsby-plugin-sharp": "^2.3.10",
+    "gatsby-remark-images": "^3.1.39",
     "gatsby-source-filesystem": "^2.1.43",
     "graphql": "14.3.1",
     "prop-types": "15.7.2",
@@ -40,6 +42,8 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
+    "@mdx-js/mdx": "^1.5.3",
+    "@mdx-js/react": "^1.5.3",
     "babel-eslint": "10.0.2",
     "eslint": "6.0.0",
     "eslint-config-react-app": "4.0.1",
@@ -47,6 +51,7 @@
     "eslint-plugin-import": "2.17.3",
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.14.1",
+    "gatsby-plugin-mdx": "^1.0.33",
     "prettier": "1.18.2",
     "tailwindcss": "1.0.4"
   },
