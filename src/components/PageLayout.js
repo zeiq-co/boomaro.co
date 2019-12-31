@@ -33,23 +33,17 @@ import Layout from './Layout';
 export default function PageTemplate({ children }) {
   return (
     <Layout>
-      <div className="container">
-        <div className="columns is-centered">
-          <div className="column is-four-fifths">
-            <section className="section">
-              <MDXProvider
-                components={{
-                  h1: props => <h1 className="title is-1" {...props} />,
-                  h2: props => <h2 className="title is-2" {...props} />,
-                  h3: props => <h3 className="title is-3" {...props} />,
-                  p: props => <p className="" {...props} />,
-                }}
-              >
-                {children}
-              </MDXProvider>
-            </section>
-          </div>
-        </div>
+      <div className="bg-white">
+        <MDXProvider
+          components={{
+            h1: props => <h1 className="text-5xl text-black flex justify-center" {...props} />,
+            h2: props => <h2 className="text-black" {...props} />,
+            h3: props => <h3 className="text-black" {...props} />,
+            p: props => <p className="text-black mx-20 my-8" {...props} />,
+          }}
+        >
+          {children}
+        </MDXProvider>
       </div>
     </Layout>
   );
