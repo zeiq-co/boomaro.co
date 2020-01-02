@@ -1,104 +1,84 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import * as Yup from 'yup';
-import { withFormik } from 'formik';
+import React from "react";
 
-const RegisterForm = props => {
-  const {
-    values,
-    touched,
-    errors,
-    isSubmitting,
-    handleChange,
-    handleBlur,
-    handleSubmit,
-  } = props;
+function encode(data) {
+  return Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join("&");
+}
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <div className="">
-        <label className="text-xl mt-8">Name</label>
-        <div className="control">
-          <input
-            className="input border border-gray-400 is-shadowless w-full h-10"
-            type="text"
-            name="name"
-            value={values.name}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {errors.name && touched.name && (
-            <p className="text-base">{errors.name}</p>
-          )}
+class RegisterForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "register", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+  };
+
+  render() {
+    return (
+      <form
+        className="register-form"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={this.handleSubmit}
+      >
+        <div className="">
+          <label className="text-xl mt-8">Name</label>
+          <div className="control">
+            <input
+              className="input border border-gray-400 is-shadowless w-full h-10"
+              type="text"
+              name="name"
+              onChange={this.handleChange}
+            />
+          </div>
         </div>
-      </div>
-      <div className="field">
-        <label className="text-xl">Your email</label>
-        <div className="control">
-          <input
-            className="input border border-gray-400 is-shadowless w-full h-10"
-            type="email"
-            name="email"
-            value={values.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {errors.email && touched.email && (
-            <p className="text-base">{errors.email}</p>
-          )}
+        <div className="field">
+          <label className="text-xl">Your email</label>
+          <div className="control">
+            <input
+              className="input border border-gray-400 is-shadowless w-full h-10"
+              type="email"
+              name="email"
+              onChange={this.handleChange}
+            />
+          </div>
         </div>
-      </div>
-      <div className="">
-        <label className="text-xl">Password</label>
-        <div className="control">
-          <input
-            className="input border border-gray-400 is-shadowless w-full h-10"
-            type="password"
-            name="password"
-            value={values.password}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {errors.password && touched.password && (
-            <p className="text-base">{errors.password}</p>
-          )}
+        <div className="">
+          <label className="text-xl">Password</label>
+          <div className="control">
+            <input
+              className="input border border-gray-400 is-shadowless w-full h-10"
+              type="password"
+              name="password"
+              onChange={this.handleChange}
+            />
+          </div>
         </div>
-      </div>
-      <button
-      className="w-full my-8  lg:mx-0 hover:underline font-bold rounded-full py-4 px-8 shadow opacity-75 gradient text-white"
-        type="submit"
-        disabled={isSubmitting}>
-            Register
-      </button>
-    </form>
-  );
-};
+        <button
+          className="w-full my-8 lg:mx-0 hover:underline font-bold rounded-full py-4 px-8 shadow opacity-75 gradient text-white"
+          type="submit"
+        >
+          Register
+        </button>
+      </form>
+    );
+  }
+}
 
-RegisterForm.propTypes = {
-  values: PropTypes.object.isRequired,
-  touched: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired,
-  isSubmitting: PropTypes.bool.isRequired,
-  handleChange: PropTypes.func.isRequired,
-  handleBlur: PropTypes.func.isRequired,
-  handleSubmit: PropTypes.func.isRequired,
-};
-
-export default withFormik({
-  mapPropsToValues: () => ({
-    name: '',
-    email: '',
-    password: '',
-  }),
-  validationSchema: Yup.object().shape({
-    name: Yup.string().required('Full name is required!'),
-    email: Yup.string().required('Email is required!'),
-    password: Yup.string().required('Password is required'),
-  }),
-  handleSubmit: (values, { setSubmitting, props }) => {
-    props.handleUpdate(values).finally(() => {
-      setSubmitting(false);
-    });
-  },
-  displayName: 'RegisterForm', // helps with React DevTools
-})(RegisterForm);
+export default RegisterForm;
