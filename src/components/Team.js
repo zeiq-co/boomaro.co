@@ -31,14 +31,14 @@ const team = [
 ];
 
 const Team = () => (
-  <div className="container px-3 mx-auto">
-        <h2 className="text-5xl text-black text-center bg-white pb-20">
-            Meet Our Team
-        </h2>
-          <div class="flex bg-white">
-          <div class="w-1/5"></div>
-          <div class="w-3/5">
-        <div className="flex flex-wrap -mb-4">
+  <div className="container px-3 mx-auto pb-24">
+    <h2 className="text-5xl text-black text-center bg-white pb-20">
+      Meet Our Team
+    </h2>
+    <div className="flex bg-white">
+      <div className="w-1/5"></div>
+        <div className="w-3/5">
+          <div className="flex flex-wrap -mb-4">
             {team.map(item => (
                 <div className="w-1/2 mb-4">
                     <div className="text-gray-700 text-center p-2">
@@ -46,11 +46,11 @@ const Team = () => (
                     </div>
                 </div>
             ))}
+          </div>
         </div>
-        </div>
-        <div class="w-1/5"></div>
-        </div>
-        </div>
+      <div className="w-1/5"></div>
+    </div>
+  </div>
 );
 
 export default Team;

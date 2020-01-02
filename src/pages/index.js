@@ -3,7 +3,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 // import catAndHumanIllustration from "../../static/images/cat-and-human-illustration.svg";
-import Navigation from "../components/Navigation";
 import HomeHero from "../components/HomeHero";
 import Waves from "../components/Waves";
 import Features from "../components/Features";
