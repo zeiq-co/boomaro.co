@@ -1,3 +1,26 @@
 {
-  "extends": "react-app"
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "graphql": true
+  },
+  "settings": {
+    "import/core-modules": ["prop-types", "react", "graphql"]
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": true
+      }
+    ]
+  }
 }

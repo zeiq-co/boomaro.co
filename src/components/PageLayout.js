@@ -1,10 +1,10 @@
 /* eslint jsx-a11y/heading-has-content: 0 */
 
-import React from 'react';
+import React from "react";
 // import styled from 'styled-components';
-import { MDXProvider } from '@mdx-js/react';
+import { MDXProvider } from "@mdx-js/react";
 
-import Layout from './Layout';
+import Layout from "./Layout";
 
 // const Container = styled.div`
 //   margin-top: 2rem;
@@ -36,10 +36,15 @@ export default function PageTemplate({ children }) {
       <div className="bg-white">
         <MDXProvider
           components={{
-            h1: props => <h1 className="text-5xl text-black flex justify-center" {...props} />,
+            h1: props => (
+              <h1
+                className="text-5xl text-black flex justify-center"
+                {...props}
+              />
+            ),
             h2: props => <h2 className="text-black" {...props} />,
             h3: props => <h3 className="text-black" {...props} />,
-            p: props => <p className="text-black mx-20 my-8" {...props} />,
+            p: props => <p className="text-black mx-20 my-8" {...props} />
           }}
         >
           {children}
