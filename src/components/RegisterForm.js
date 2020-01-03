@@ -44,7 +44,7 @@ class RegisterForm extends React.Component {
           <label className='text-xl mt-8'>Name</label>
           <div className='control'>
             <input
-              className='input border border-gray-400 is-shadowless w-full h-10'
+              className='input my-4 border border-gray-400 is-shadowless w-full h-10'
               type='text'
               name='name'
               value={name}
@@ -56,7 +56,7 @@ class RegisterForm extends React.Component {
           <label className='text-xl'>Your email</label>
           <div className='control'>
             <input
-              className='input border border-gray-400 is-shadowless w-full h-10'
+              className='input my-4 border border-gray-400 is-shadowless w-full h-10'
               type='email'
               name='email'
               value={email}
@@ -65,11 +65,11 @@ class RegisterForm extends React.Component {
           </div>
         </div>
         <div className=''>
-          <label className='text-xl'>Password</label>
+          <label className='text-xl'>Phone Number</label>
           <div className='control'>
             <input
-              className='input border border-gray-400 is-shadowless w-full h-10'
-              type='tel'
+              className='input my-4 border border-gray-400 is-shadowless w-full h-10'
+              type='number'
               name='phone'
               value={phone}
               onChange={this.handleChange}
