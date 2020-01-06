@@ -64,7 +64,7 @@ class RegisterForm extends React.Component {
             />
           </div>
         </div>
-        <div className=''>
+        <div>
           <label className='text-xl'>Phone Number</label>
           <div className='control'>
             <input

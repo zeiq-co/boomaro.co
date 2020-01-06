@@ -13,6 +13,7 @@
     "import/core-modules": ["prop-types", "react", "graphql"]
   },
   "rules": {
+    "no-console": 1,
     "prettier/prettier": [
       "error",
       {
