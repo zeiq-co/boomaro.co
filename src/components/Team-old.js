@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TeamMember from './TeamMember';
+import TeamMember from './TeamMember-old';
 
 
 const team = [

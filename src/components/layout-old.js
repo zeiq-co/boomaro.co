@@ -2,7 +2,7 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-import Navigation from "./Navigation";
+import Navigation from "./Navigation-old";
 import Footer from "./Footer";
 
 function Layout({ children }) {
