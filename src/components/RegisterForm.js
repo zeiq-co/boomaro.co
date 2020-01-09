@@ -32,7 +32,7 @@ const RegisterForm = () => (
         />
       </div>
     </div>
-    <div data-netlify-recaptcha="true" />
+    {/* <div data-netlify-recaptcha="true" /> */}
     <button
       className="w-full my-8 lg:mx-0 hover:underline font-bold rounded-full py-4 px-8 shadow opacity-75 gradient text-white"
       type="submit"
