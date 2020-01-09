@@ -17,7 +17,7 @@ const RegisterForm = () => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'register-form', name, email, telephone }),
+      body: encode({ 'form-name': 'signup-form', name, email, telephone }),
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
@@ -54,7 +54,6 @@ const RegisterForm = () => {
         <div className="control">
           <input
             className="input my-4 border border-gray-400 is-shadowless w-full h-10"
-            type="number"
             name="telephone"
             value={telephone}
             onChange={e => setTelephone(e.target.value)}
