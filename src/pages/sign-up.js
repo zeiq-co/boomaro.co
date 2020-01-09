@@ -20,10 +20,10 @@ const SignUp = () => {
           </div>
           <div className="my-20">
             <RegisterForm />
-            <HomeHero />
           </div>
         </div>
       </div>
+      <HomeHero />
     </Layout>
   );
 };
