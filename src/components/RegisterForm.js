@@ -17,7 +17,7 @@ const RegisterForm = () => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'signup-form', name, email, telephone }),
+      body: encode({ 'form-name': 'register-form', name, email, telephone }),
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
