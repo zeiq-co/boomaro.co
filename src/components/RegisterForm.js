@@ -9,7 +9,7 @@ const encode = data => {
 const RegisterForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [telephone, setTelephone] = useState('');
+  const [phone, setPhone] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const RegisterForm = () => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'register-form', name, email, telephone }),
+      body: encode({ 'form-name': 'register-form', name, email, phone }),
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
@@ -54,9 +54,9 @@ const RegisterForm = () => {
         <div className="control">
           <input
             className="input my-4 border border-gray-400 is-shadowless w-full h-10"
-            name="telephone"
-            value={telephone}
-            onChange={e => setTelephone(e.target.value)}
+            name="phone"
+            value={phone}
+            onChange={e => setPhone(e.target.value)}
           />
         </div>
       </div>
