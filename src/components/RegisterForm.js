@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
 
 const RegisterForm = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [telephone, setTelephone] = useState('');
+
   const handleSubmit = e => {
     e.preventDefault();
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'register-form', name, email, telephone }),
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
   };
 
   return (
-    <form
-      name="register-form"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      onSubmit={handleSubmit}
-    >
-      <input type="hidden" name="form-name" value="register-form" />
+    <form onSubmit={handleSubmit}>
       <div className="">
         <label className="text-xl mt-8">Name</label>
         <div className="control">
@@ -21,6 +32,8 @@ const RegisterForm = () => {
             className="input my-4 border border-gray-400 is-shadowless w-full h-10"
             type="text"
             name="name"
+            value={name}
+            onChange={e => setName(e.target.value)}
           />
         </div>
       </div>
@@ -31,6 +44,8 @@ const RegisterForm = () => {
             className="input my-4 border border-gray-400 is-shadowless w-full h-10"
             type="email"
             name="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
           />
         </div>
       </div>
@@ -40,7 +55,9 @@ const RegisterForm = () => {
           <input
             className="input my-4 border border-gray-400 is-shadowless w-full h-10"
             type="number"
-            name="phone"
+            name="telephone"
+            value={telephone}
+            onChange={e => setTelephone(e.target.value)}
           />
         </div>
       </div>

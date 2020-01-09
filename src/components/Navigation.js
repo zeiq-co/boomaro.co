@@ -12,7 +12,7 @@ const Navigation = () => (
           className="flex flex-row text-red-700 toggleColour no-underline hover:no-underline font-bold text-2xl  lg:text-4xl text-gray-800 flex-row"
           href="/"
         >
-          <img src={logo} width="50" height="50" />
+          <img src={logo} style={{ width: 'auto', height: 50 }} />
           Boomaro
         </a>
       </div>
