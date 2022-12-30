@@ -6,7 +6,7 @@
   "dependencies": {
     "formik": "^2.0.10",
     "ftp-deploy": "^2.3.3",
-    "gatsby": "2.10.4",
+    "gatsby": "2.32.13",
     "gatsby-plugin-manifest": "2.2.0",
     "gatsby-plugin-mdx": "^1.0.64",
     "gatsby-plugin-postcss": "2.1.0",
